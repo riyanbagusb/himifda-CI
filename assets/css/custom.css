@@ -1,0 +1,61 @@
+/*Himifda*/
+/*Navbar*/
+.alert-dismissible .close {
+	padding: .5rem 1.25rem;
+}
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+	color: #fff;
+}
+.dropdown-item:active, .dropdown-item:hover {
+	background-color: #0f3b7e;
+	color: #fff;
+}
+/*Social Media Navbar*/
+.social {
+	color: #808080;
+}
+#social-nav {
+	height: 2.5em;
+	padding: 0;
+}
+#email:hover {
+	color: #00c0ef;
+}
+#facebook:hover {
+	color: #3b5998;
+}
+#twitter:hover {
+	color: #1ea1f3;
+}
+#instagram:hover {
+	color: #de3671;
+}
+#youtube:hover {
+	color: #f00;
+}
+#line:hover {
+	color: #00c300;
+}
+/*Footer*/
+#map-location {
+	border: dashed;
+	border-radius: 15px;
+}
+#kritik-saran-radius {
+	border-radius: 15px;
+}
+/*FAQ Page*/
+#faq-accordion {
+	text-decoration: none;
+	color: #343a40;
+}
+.faq-radius {
+	border-radius: 30px !important;
+}
+.full-radius {
+	border-radius: 15px !important;
+}
+.top-radius {
+	border-radius: 15px 15px 0px 0px !important;
+}
+/*Other*/
