@@ -27,6 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											<h1 class="h4 text-gray-900 mb-4">Login Himifda</h1>
 										</div>
 										<?= $this->session->flashdata('login'); ?>
+										<?= var_dump($this->session->userdata()); ?>
 										<form class="user" method="post" action="<?= base_url('admin'); ?>">
 											<div class="form-group">
 												<input type="text" class="form-control form-control-user" name="nim" placeholder="NIM" value="<?= set_value('nim'); ?>">

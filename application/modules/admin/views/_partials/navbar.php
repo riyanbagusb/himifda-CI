@@ -16,22 +16,23 @@
 				<li class="nav-item dropdown no-arrow">
 					<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						<span class="mr-2 d-none d-lg-inline text-gray-600 small"><?= $_SESSION['nama_lengkap']; ?></span>
-						<img class="img-profile rounded-circle" src="<?= base_url('assets/images/profile/default.png')?>">
-						<!-- <img class="img-profile rounded-circle" src=""> --><!-- <?= base_url('assets/images/profile/') . $anggota['image'] ?> -->
+						<img class="img-profile rounded-circle" src="<?= base_url('assets/images/profile/default.png') ?>">
+						<!-- <img class="img-profile rounded-circle" src=""> -->
+						<!-- <?= base_url('assets/images/profile/') . $anggota['image'] ?> -->
 					</a>
 					<div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-						<a class="dropdown-item" href="#">
+						<div class="mx-3">
+							Akses terakhir pada Senin, 25 Januari 2019
+						</div>
+						<hr class="dropdown-divider">
+						<span class="dropdown-item">
 							<i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-							Profile
-						</a>
-						<a class="dropdown-item" href="#">
-							<i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-							Settings
-						</a>
-						<a class="dropdown-item" href="#">
-							<i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-							Activity Log
-						</a>
+							<?= $_SESSION['nama_lengkap']; ?>
+						</span>
+						<span class="dropdown-item">
+							<i class="fas fa-bolt fa-sm fa-fw mr-2 text-gray-400"></i>
+							<?= $_SESSION['nim']; ?>
+						</span>
 						<div class="dropdown-divider"></div>
 						<a class="dropdown-item" href="<?= base_url('admin/logout'); ?>">
 							<i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>

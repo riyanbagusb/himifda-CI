@@ -75,6 +75,10 @@ $route['admin/pengaturan'] = 'admin/pengaturan';
 $route['admin/deleteUser/(:any)'] = 'admin/deleteUser/$1';
 $route['admin/updatePeriode'] = 'admin/updatePeriode';
 
+
+$route['admin/anggota'] = 'admin/master/anggota';
+$route['admin/periode'] = 'admin/master/periode';
+
 $route['(:any)'] = 'error_404';
 $route['(:any)/(:any)'] = 'error_404';
 $route['(:any)/(:any)/(:any)'] = 'error_404';

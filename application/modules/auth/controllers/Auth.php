@@ -1,12 +1,15 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Auth extends CI_Controller {
+class Auth extends CI_Controller
+{
 
-	public function __construct() {
+	public function __construct()
+	{
 		parent::__construct();
 	}
-	public function index() {
+	public function index()
+	{
 		$this->load->library('form_validation');
 		$this->form_validation->set_rules('nim', 'NIM', 'required|trim|numeric|min_length[10]|max_length[10]');
 		$this->form_validation->set_rules('password', 'Password', 'required|trim');
@@ -20,7 +23,8 @@ class Auth extends CI_Controller {
 			$this->_login();
 		}
 	}
-	private function _login() {
+	private function _login()
+	{
 		$nim = $this->input->post('nim');
 		$password = $this->input->post('password');
 		$anggota = $this->db->get_where('user', ['nim' => $nim])->row_array();
@@ -43,12 +47,9 @@ class Auth extends CI_Controller {
 			redirect('admin');
 		}
 	}
-	public function logout() {
-		$this->session->unset_userdata('nim');
-		$this->session->unset_userdata('jabatan_id');
-		$this->session->unset_userdata('status');
-		$this->session->set_flashdata('login', '<div class="alert alert-success" role="alert">You have been logged out!</div>');
+	public function logout()
+	{
+		$this->session->sess_destroy();
 		redirect('admin');
-	
-}
+	}
 }

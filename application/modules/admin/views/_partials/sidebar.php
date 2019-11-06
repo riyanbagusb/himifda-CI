@@ -11,29 +11,59 @@
 			<i class="fas fa-fw fa-tachometer-alt"></i>
 			<span>Dashboard</span>
 		</a>
-	</li>	
-	<hr class="sidebar-divider">
-	<div class="sidebar-heading">Menu</div>
+	</li>
+	<div class="sidebar-heading">Master Data</div>
 	<li class="nav-item">
-		<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse-" aria-expanded="true" aria-controls="collapse-">
+		<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#masterdata" aria-expanded="true" aria-controls="collapse-">
 			<i class="fas fa-fw fa-folder"></i>
-			<span>Menu</span>
+			<span>Master Data</span>
 		</a>
-		<div id="collapse-" class="collapse" aria-labelledby="heading-" data-parent="#accordionSidebar">
+		<div id="masterdata" class="collapse" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
-				<h6 class="collapse-header">Halaman Utama</h6>
-				<a class="collapse-item" href="<?= base_url('admin/faq'); ?>">FAQ</a>
-				<a class="collapse-item" href="<?= base_url('admin/visi_misi'); ?>">Visi & Misi</a>
+				<a class="collapse-item" href="<?= base_url('admin/anggota'); ?>">Anggota</a>
+				<a class="collapse-item" href="<?= base_url('admin/periode'); ?>">Periode</a>
+				<a class="collapse-item" href="<?= base_url('admin/jabatan'); ?>">Jabatan</a>
 			</div>
 		</div>
 	</li>
 	<hr class="sidebar-divider">
-	<div class="sidebar-heading">Lainnya</div>
+	<div class="sidebar-heading">Menu Website</div>
 	<li class="nav-item">
-		<a class="nav-link" href="<?= base_url('admin/pengaturan'); ?>">
+		<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse-" aria-expanded="true" aria-controls="collapse-">
+			<i class="fas fa-fw fa-folder"></i>
+			<span>Manajemen Konten</span>
+		</a>
+		<div id="collapse-" class="collapse" aria-labelledby="heading-" data-parent="#accordionSidebar">
+			<div class="bg-white py-2 collapse-inner rounded">
+				<h6 class="collapse-header">Halaman Depan</h6>
+				<a class="collapse-item" href="<?= base_url('admin/event'); ?>">Event</a>
+				<a class="collapse-item" href="<?= base_url('admin/visi_misi'); ?>">Visi & Misi</a>
+				<a class="collapse-item" href="<?= base_url('admin/pengurus'); ?>">Struktur Organisasi</a>
+				<a class="collapse-item" href="<?= base_url('admin/faq'); ?>">FAQ</a>
+			</div>
+		</div>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="<?= base_url('admin/kritik_saran'); ?>">
+			<i class="fas fa-fw fa-cog"></i>
+			<span>Kritik & Saran</span>
+		</a>
+	</li>
+	<hr class="sidebar-divider">
+	<div class="sidebar-heading">Lainnya</div>
+
+	<li class="nav-item">
+		<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pengaturan" aria-expanded="true" aria-controls="collapse-">
 			<i class="fas fa-fw fa-cog"></i>
 			<span>Pengaturan</span>
 		</a>
+		<div id="pengaturan" class="collapse" data-parent="#accordionSidebar">
+			<div class="bg-white py-2 collapse-inner rounded">
+				<a class="collapse-item" href="<?= base_url('admin/role'); ?>">Role</a>
+				<a class="collapse-item" href="<?= base_url('admin/user'); ?>">User</a>
+				<a class="collapse-item" href="<?= base_url('admin/pengaturan'); ?>">pengaturan lainnya</a>
+			</div>
+		</div>
 	</li>
 	<hr class="sidebar-divider d-none d-md-block">
 	<div class="text-center d-none d-md-inline">
